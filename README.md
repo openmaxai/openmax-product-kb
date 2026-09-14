@@ -135,7 +135,7 @@ Answer principles: Responses vary by user state (paid / trial · team size · pa
 
 ## 3 IM Channel Connections
 
-- Answering guidance (important): When a customer says "help me connect XX," give the single fastest path — do not list options 1/2/3. For channels that support conversational quick-connect (WeCom / Feishu / DingTalk / Lark), always lead with "say one sentence to the Agent + scan the QR code"; only then offer backend configuration for other channels.
+- Answering guidance (important): When a customer says "help me connect XX," go straight to the fastest path — do not list options 1/2/3. The four channels WeCom / Feishu / DingTalk / Lark have built-in conversational quick-connect: as soon as the customer asks, the Agent initiates quick-connect directly — it first prompts the user to click to confirm, then sends a QR code, and the user scans it to complete the connection, no backend needed. Other channels use backend configuration.
 - Supported channels (12): Domestic: Feishu · WeCom · DingTalk · WeChat; International: Lark · Telegram · WhatsApp · Microsoft Teams · Slack · Discord · LINE · Zalo. WhatsApp and Zalo each support both official and personal account connections.
 - Two connection methods:
   - ① Traditional backend configuration (currently supported) — fill in token / authorization / scan QR code in the backend; the per-channel instructions below describe this method.
