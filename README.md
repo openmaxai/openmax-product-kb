@@ -344,7 +344,7 @@ Two options: Official (Zalo Bot Platform) — stable and supported; Personal (no
 
 ### Workspace Plans
 Plans (all include: full core Workspace features · cross-platform IM channels · team collaboration and project management · Credits shared across all Agents · ability to connect external Agents [free for a limited time] · option to purchase additional Credit packs)
-- Standard (Most Popular) $449/month (list price $499 · limited-time discount): 49,900 Credits per month; 7-day free trial · 5,000 Credits included; 20 employee seats. Priority support.
+- Standard (Most Popular) $449/month (list price $499 · limited-time discount): 49,900 Credits per month; 7-day free trial · 1 Credit included; 20 employee seats. Priority support.
 - Pro $899/month (list price $999 · limited-time discount): 99,900 Credits per month; 50 employee seats. Priority support + dedicated customer success manager.
 - Enterprise – Custom pricing: Customizable Credit quota; custom seat and permission management for enterprises, multiple deployment options (inquire with Sales), custom integrations, dedicated technical support + SLA. Enterprise-grade security (e.g., SSO/SAML single sign-on) is a roadmap item / negotiable based on enterprise requirements — specific delivery is subject to contract (SSO is not available in the current standard product; see "Usage Limitations"). Priority support + dedicated customer success manager + SLA.
 
