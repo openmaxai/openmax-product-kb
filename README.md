@@ -344,16 +344,16 @@ Two options: Official (Zalo Bot Platform) — stable and supported; Personal (no
 
 ### Workspace Plans
 Plans (all include: full core Workspace features · cross-platform IM channels · team collaboration and project management · Credits shared across all Agents · ability to connect external Agents [free for a limited time] · option to purchase additional Credit packs)
-- Standard (Most Popular) $449/month (list price $499 · limited-time discount): 49,900 Credits per month; 7-day free trial · 1 Credit included; 20 employee seats. Priority support.
+- Standard (Most Popular) $449/month (list price $499 · limited-time discount): 49,900 Credits per month; 7-day free trial; 20 employee seats. Priority support.
 - Pro $899/month (list price $999 · limited-time discount): 99,900 Credits per month; 50 employee seats. Priority support + dedicated customer success manager.
 - Enterprise – Custom pricing: Customizable Credit quota; custom seat and permission management for enterprises, multiple deployment options (inquire with Sales), custom integrations, dedicated technical support + SLA. Enterprise-grade security (e.g., SSO/SAML single sign-on) is a roadmap item / negotiable based on enterprise requirements — specific delivery is subject to contract (SSO is not available in the current standard product; see "Usage Limitations"). Priority support + dedicated customer success manager + SLA.
 
-- New-user signup Credits (adjusted from 2026-10): Free tier — 600 + 1 + 1 Credits; Standard ($449) — 1 Credit. ⚠️ Some pages may still show outdated grant copy; refer to what is actually credited / the purchase page.
+- New-user signup Credits (adjusted from 2026-10): Free tier — 600 + 1 + 1 Credits. ⚠️ Some pages may still show outdated grant copy; refer to what is actually credited / the purchase page.
 - Custom pricing → escalate to Sales: For arrangements beyond the public plans — deep discounts / contracts / invoices / enterprise procurement / legal — contact Sales for the appropriate pricing.
 - Payment methods: Credit / debit card, Alipay (subscription + one-time), WeChat Pay (one-time purchases only — does not support subscription auto-renewal) (see below for auto-renewal behavior by payment method).
 
 ### Trial Period (High Frequency)
-- Full access during the trial: The trial period provides complete access to all plan features (including the included Credits).
+- Full access during the trial: The trial period provides complete access to all plan features.
 - A card must be on file, but no charge occurs when adding it: Starting a trial requires a payment card on file — the card is only used for auto-renewal and payment validation after the trial ends; no charge is made at the time you add the card.
 - First charge only occurs when the trial converts to paid: The first payment is only collected when the trial period ends and the subscription converts to paid status.
 - Cancel anytime during the trial — no charge: You can cancel at any time during the trial with no fees charged (canceling before the trial ends means no first payment is collected).
