@@ -348,7 +348,6 @@ Plans (all include: full core Workspace features · cross-platform IM channels �
 - Pro $899/month (list price $999 · limited-time discount): 99,900 Credits per month; 50 employee seats. Priority support + dedicated customer success manager.
 - Enterprise – Custom pricing: Customizable Credit quota; custom seat and permission management for enterprises, multiple deployment options (inquire with Sales), custom integrations, dedicated technical support + SLA. Enterprise-grade security (e.g., SSO/SAML single sign-on) is a roadmap item / negotiable based on enterprise requirements — specific delivery is subject to contract (SSO is not available in the current standard product; see "Usage Limitations"). Priority support + dedicated customer success manager + SLA.
 
-- New-user signup Credits (adjusted from 2026-10): Free tier — 600 + 1 + 1 Credits. ⚠️ Some pages may still show outdated grant copy; refer to what is actually credited / the purchase page.
 - Custom pricing → escalate to Sales: For arrangements beyond the public plans — deep discounts / contracts / invoices / enterprise procurement / legal — contact Sales for the appropriate pricing.
 - Payment methods: Credit / debit card, Alipay (subscription + one-time), WeChat Pay (one-time purchases only — does not support subscription auto-renewal) (see below for auto-renewal behavior by payment method).
 
