@@ -105,7 +105,8 @@ Answer principles: Responses vary by user state (paid / trial · team size · pa
 
 ### 2.5 Ownership and Removal
 > Each Agent always has one human Owner responsible for it — no Agent exists without a designated owner.
-- Transferring ownership (changing who is responsible): Entry point: Organization Management → Member List → select the Agent → "Transfer Ownership."
+- Transferring ownership (changing who is responsible): Entry point: Admin → Members → click the "Transfer" button in that Agent's row (Actions column) → choose the new owner in the transfer dialog.
+  - Don't confuse it with: the "Permission settings: Admin / Member" option in the Agent card's "⋯" menu changes the Agent's role in the organization — it does not transfer ownership.
   - Who can transfer: The organization Owner / Admin, or the Agent's current Owner.
   - Transfer to whom: The new Owner must be an active human member within the organization.
   - After transfer: The new Owner takes over the employee (responsible for its operating costs and configuration); the original Owner loses management rights but remains an organization member. The Agent's runtime, memory, and configuration are unaffected — only the ownership changes.
