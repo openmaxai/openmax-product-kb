@@ -5,7 +5,7 @@
 
 Use case: Newly registered users who are not yet familiar with the product ask questions during use → Agent calls this knowledge base to answer accurately and guide them through onboarding.
 
-Answer principles: Responses vary by user state (paid / trial · team size · payment method); international and domestic editions are mostly identical, with a few differences (pricing / models / payment / data residency) noted inline. Items marked ⚠️ are time-sensitive — refer to the latest product pages for current accuracy.
+Answer principles: Responses vary by user state (paid / trial · team size · payment method). Items marked ⚠️ are time-sensitive — refer to the latest product pages for current accuracy.
 
 ---
 
@@ -71,7 +71,7 @@ Answer principles: Responses vary by user state (paid / trial · team size · pa
 ### B · Capability Scope (What Agents Can Do)
 - Mapped by role (who you are → what it helps you with first): Executive → executive briefings (cross-department KPI / risk / decision summaries), OKR progress dashboards (red/yellow/green); Operations → automated meeting notes distributed across multiple channels (Slack / Notion / email), process automation, vendor evaluation, SLA tracking, inventory forecasting; Sales → opportunity screening (ICP scoring / lead research), personalized lead follow-up, quote and proposal generation, customer churn prediction; Finance → invoice reconciliation (three-way matching), expense review, cash flow forecasting, compliance checks; Customer Service / Support → multilingual customer support (a single Agent supports 15+ languages), ticket classification and routing, VIP upgrades, churn alerts; HR / Recruiting → resume screening, interview scheduling, onboarding / offboarding management (offboarding includes permission revocation), employee satisfaction surveys.
 - Types of work that can be handled: Applicable to almost any function; common examples include — coordination (chasing people / deliverables / progress), content creation (write once, sync to multiple channels), bilingual customer service (24/7), delivery tracking (deadline dashboards), lead follow-up (post-event consolidation + multilingual outreach), as well as financial reconciliation / expense reimbursement / payment reminders, business data analysis, recruiting background checks and onboarding/offboarding, contract review, cross-department handoffs, social media content operations, and opportunity screening.
-- Models and lock-in: The international edition defaults to the current flagship model (Claude flagship series) and updates with new versions; model-neutral, zero lock-in, compatible with Claude / OpenAI / DeepSeek and others — no closed ecosystem. The domestic edition uses domestic models with data kept in-country.
+- Models and lock-in: The international edition defaults to the current flagship model (Claude flagship series) and updates with new versions; model-neutral, zero lock-in, compatible with Claude / OpenAI / DeepSeek and others — no closed ecosystem.
 
 ## 2 AI Agent (Digital Employees)
 
@@ -347,11 +347,11 @@ Two options: Official (Zalo Bot Platform) — stable and supported; Personal (no
 
 ## 4 Subscriptions and Plans
 
-> Default customer-facing messaging: The primary offering is the Workspace plans (Standard / Pro / Enterprise Custom), and public pricing can be quoted directly to customers. Only custom arrangements (deep discounts / contracts / invoices / enterprise procurement / legal) should be escalated to Sales. Individual plans are not currently available — if a customer proactively asks "is there a personal / single-user plan?", reply "please reach out to customer support or Sales." Do not proactively mention individual plans. Legacy Dashboard plans (Air/Pro/Ultra) should only be discussed if an existing customer explicitly asks about "their old plan" — do not bring them up otherwise.
+> Default customer-facing messaging: New customers can only purchase the Workspace plans (Standard / Pro / Enterprise Custom), and public pricing can be quoted directly to customers. Only custom arrangements (deep discounts / contracts / invoices / enterprise procurement / legal) should be escalated to Sales. Individual plans are not currently available — if a customer proactively asks "is there a personal / single-user plan?", reply "please reach out to customer support or Sales." Do not proactively mention individual plans. Legacy Dashboard plans (Air/Pro/Ultra) should only be discussed if an existing customer explicitly asks about "their old plan" — do not bring them up otherwise.
 
 ### Workspace Plans
 Plans (all include: full core Workspace features · cross-platform IM channels · team collaboration and project management · Credits shared across all Agents · ability to connect external Agents [free for a limited time] · option to purchase additional Credit packs)
-- Standard (Most Popular) $449/month (list price $499 · limited-time discount): 49,900 Credits per month; 7-day free trial; 20 employee seats. Priority support.
+- Standard (Most Popular) $449/month (list price $499 · limited-time discount): 49,900 Credits per month; trials arranged via Sales; 20 employee seats. Priority support.
 - Pro $899/month (list price $999 · limited-time discount): 99,900 Credits per month; 50 employee seats. Priority support + dedicated customer success manager.
 - Enterprise – Custom pricing: Customizable Credit quota; custom seat and permission management for enterprises, multiple deployment options (inquire with Sales), custom integrations, dedicated technical support + SLA. Enterprise-grade security (e.g., SSO/SAML single sign-on) is a roadmap item / negotiable based on enterprise requirements — specific delivery is subject to contract (SSO is not available in the current standard product; see "Usage Limitations"). Priority support + dedicated customer success manager + SLA.
 
@@ -359,11 +359,12 @@ Plans (all include: full core Workspace features · cross-platform IM channels �
 - Payment methods: Credit / debit card, Alipay (subscription + one-time), WeChat Pay (one-time purchases only — does not support subscription auto-renewal) (see below for auto-renewal behavior by payment method).
 
 ### Trial Period (High Frequency)
+- No self-serve trial: to try the product, contact Sales — they will arrange a trial based on your situation.
 - Full access during the trial: The trial period provides complete access to all plan features.
 - A card must be on file, but no charge occurs when adding it: Starting a trial requires a payment card on file — the card is only used for auto-renewal and payment validation after the trial ends; no charge is made at the time you add the card.
 - First charge only occurs when the trial converts to paid: The first payment is only collected when the trial period ends and the subscription converts to paid status.
 - Cancel anytime during the trial — no charge: You can cancel at any time during the trial with no fees charged (canceling before the trial ends means no first payment is collected).
-- One-liner for customers: Adding your card does not mean you'll be charged immediately. You can cancel anytime within the 7-day trial at zero cost — you're only charged when the trial ends and you don't cancel.
+- One-liner for customers: Adding your card does not mean you'll be charged immediately. You can cancel anytime during the trial at zero cost — you're only charged when the trial ends and you don't cancel.
 
 ### Legacy Dashboard Plans (Old naming: Air/Pro/Ultra)
 > Do not proactively discuss: Only address these when an existing customer specifically asks about "the plan they used to have." Do not quote legacy plan names, availability, or pricing from this knowledge base — always defer to the latest customer support team messaging.
@@ -474,7 +475,7 @@ How to use Projects (three things):
 - Core data security position: We do not claim "zero risk / absolute security." Core principle: Data is data, AI is AI — AI is for inference only; it does not ingest, store, or use raw customer data to train models. Boundaries are clearly defined (both what we do and don't do are stated openly).
 - Security points that may be shared with customers: ① Data is data, AI is AI — customer data is not used to train models; ② Data in transit: TLS encryption; ③ Data at rest: depends on underlying storage infrastructure configuration (no additional encryption of Agent memory at the application layer); refer to the technical team for details; ④ Authentication: managed by a third-party identity provider (IdP) — the current product does not enforce MFA; do not promise customers "MFA is supported"; ⑤ Data retention / deletion: handled per privacy policy and customer support procedures (sensitive operations require identity verification — see "Organization and Management" / Part 3).
 - Certifications and compliance documentation (due diligence) → escalate to Sales + Technical: SOC2 reports, DPA, GDPR, complete sub-processor lists, and other formal materials are provided by Sales + Technical only.
-- Deployment options: The current standard product is public cloud SaaS (models / Agents run in the cloud, ready out of the box). For private deployment / hybrid deployment and other enterprise-custom configurations, contact Sales / Technical for evaluation — do not make specific delivery commitments in customer-facing responses. For purely domestic (China) use cases with no cross-border data transfer, use the domestic edition (domestic cloud + domestic models + data kept in-country).
+- Deployment options: The current standard product is public cloud SaaS (models / Agents run in the cloud, ready out of the box). For private deployment / hybrid deployment and other enterprise-custom configurations, contact Sales / Technical for evaluation — do not make specific delivery commitments in customer-facing responses.
 - What we will / will not commit to: We will commit — to not training on customer data; to transparently disclosing residual risks and mitigations. We will never say — "absolutely secure / zero risk / 100% compliant," draw compliance conclusions on behalf of a customer's legal team, or self-certify that we have passed a specific certification.
 
 ---
@@ -484,7 +485,7 @@ How to use Projects (three things):
 > Purpose: a thin "how to answer" layer — provides a one-liner stance / response for each question in the customer's natural phrasing, plus error corrections. Does not duplicate facts from Part 1 (precise figures such as prices / Credit amounts live only in Part 1's corresponding sections — this section points to them). For fast customer-facing responses, ensuring consistency with Part 1.
 
 Pricing · Payment
-- "Do I need a credit card?" → Starting a trial requires a payment card on file (no charge at that moment — the first payment is only collected when the trial ends; you can cancel at any time during the trial). Paying customers use Stripe card (USD) / Alipay (see "Subscriptions and Plans").
+- "Can I try it for free / do I need a credit card?" → There is no self-serve trial; contact Sales and they will arrange a trial based on your situation. Starting a trial requires a payment card on file (no charge at that moment — the first payment is only collected when the trial ends; you can cancel at any time during the trial). Paying customers use Stripe card (USD) / Alipay (see "Subscriptions and Plans").
 - "How much does it cost / what plans are available / how is it billed?" → The primary offering is the plans (Standard $449 / Pro $899 / Enterprise custom — three tiers), billed monthly; public pricing can be quoted directly — for exact prices, refer to the purchase page / "Subscriptions and Plans" (limited-time discounts may apply — not hardcoded here). Deep discounts / contracts / invoices and other custom arrangements → escalate to Sales. (Individual plans are not currently available; if a customer asks about individual / single-user plans, they can contact customer support or Sales.)
 - "If I forget to renew, will I lose my data?" → Not immediately: there is a service grace period + renewal grace period + data retention period — three levels of buffer. Renewing during the grace period preserves all data; data is only purged after the retention period ends (see "Subscriptions and Plans" for specific durations).
 - "How do I turn off auto-renewal / I don't want to be charged anymore?" → Toggle off the "Auto-Renewal" switch on the subscription settings / plan information page — the current period runs out and no further charges are made; your account remains active. If you cannot find the switch, or if you pay via corporate billing, contact customer support. Note: this is different from "Cancel Subscription" (which actively cancels the plan).
