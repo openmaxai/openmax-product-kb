@@ -1,0 +1,210 @@
+# keywords.yml — retrieval keywords for the openmax-product-faq skill (`kb.js ask`)
+#
+# Used ONLY by `kb.js ask` to map a customer question to the best 1–2 README sections.
+# It is not shown to customers and does not change any answer text.
+#
+# Maintenance (content team):
+#   - Update this file in the same PR that adds / renames a README section.
+#   - Keys are section headings from README-zh.md (Chinese) or README.md (English).
+#     Leading numbering ("5 ", "2.1 ") is optional; a key covers BOTH language files.
+#   - strong: words / short phrases that clearly mean this section (weight 4).
+#     weak:   words that hint at it but also appear elsewhere (weight 1.5).
+#     Put Chinese and English terms in the same lists; matching is case-insensitive.
+#   - Chinese terms match as substrings ("扣费" matches "会自动扣费吗"); keep them
+#     2–6 characters and avoid generic words (支持 / 可以 / 怎么).
+#   - synonyms: each group is treated as one concept — if a question contains any
+#     member, all members are considered present.
+#   - After merge, agents pick it up on their next sync (≤24h) — no release needed.
+#     `kb.js status` lists keys that no longer match a heading ("Unresolved").
+#
+# Supported syntax: a simple YAML subset (mappings, `- item` lists, [a, b] lists, quotes, # comments).
+
+version: 1
+
+synonyms:
+  积分: [credit, credits, 点数]
+  套餐: [plan, plans, 订阅套餐]
+  价格: [多少钱, 收费, 费用, price, pricing, cost]
+  试用: [trial, 免费试用]
+  续费: [renew, renewal]
+  退款: [refund, 退钱]
+  发票: [invoice, 收据, receipt]
+  数字员工: [ai员工, digital employee]
+  休眠: [pause, hibernate, 暂停]
+  企业微信: [企微, wecom]
+  飞书: [feishu]
+  钉钉: [dingtalk]
+  连接器: [connector, 集成, integration]
+  知识库: [knowledge base]
+  安全: [security, 隐私, privacy]
+
+sections:
+  # ---------- Part 1 · Product knowledge ----------
+  "0 快速开始 · 首次使用教程":
+    strong: [怎么用, 如何使用, 上手, 入门, 新手, 教程, 第一次用, 注册后, getting started, tutorial, first time, how to start]
+    weak: [开始, 使用, start, begin]
+
+  "A · 产品是什么":
+    strong: [openmax是什么, 是什么产品, 产品介绍, 干什么的, 和chatgpt, what is openmax, what does openmax do, chatgpt]
+    weak: [介绍, 定位, 通用大模型, overview]
+
+  "B · 能力边界（Agent 能做什么）":
+    strong: [能做什么, 能干什么, 能力边界, 做不到, capabilities, capability scope]
+    weak: [能力, 擅长, capability]
+
+  "2 AI Agent（数字员工）":
+    strong: [数字员工, ai员工, digital employee]
+    weak: [员工]
+
+  "2.1 员工类型：轻量型 / 标准型":
+    strong: [轻量型, 标准型, 员工类型, 规格, 换规格, lightweight, standard type, employee type]
+    weak: [算力, 升级员工, compute]
+
+  "2.2 雇佣员工：创建 Agent / 外接机器人":
+    strong: [创建员工, 新建员工, 雇佣员工, 创建agent, 外接机器人, 外部agent, hire, create agent, external bot]
+    weak: [新建, 添加员工, add agent]
+
+  "2.3 云端运行与存储":
+    strong: [云端运行, 云端, 本地部署, 电脑关机, cloud runtime, runs in the cloud]
+    weak: [运行环境, 存储, storage]
+
+  "2.4 Agent 状态：运行中 / 休眠 / 已删除":
+    strong: [休眠, 唤醒, 暂停员工, 员工状态, 已删除, pause, hibernate, wake up, agent state]
+    weak: [恢复, 停止, resume]
+
+  "2.5 所有权与移除":
+    strong: [转移owner, 转让, 所有权, 移除员工, 删除员工, transfer ownership, owner, remove agent]
+    weak: [移除, 归属, remove]
+
+  "2.6 对话与群聊模式":
+    strong: [群聊, 建群, 拉群, 进群, 拉进, 群里, @它, group chat, add to group, mention]
+    weak: [对话, 回复模式, conversation]
+
+  "2.7 Agent 间协作":
+    strong: [员工协作, agent协作, 多个员工, 互相协作, agent collaboration, multiple agents]
+    weak: [协作, collaborate]
+
+  "2.8 自适应记忆（让员工越用越懂你）":
+    strong: [记忆, 记住, 越用越懂, 忘记, memory, remember]
+    weak: [偏好, preference]
+
+  "3 IM 渠道连接":
+    strong: [渠道, 接入, 对接, 快连, 对话式快连, im channel, connect channel, quick-connect]
+    weak: [连接, 绑定, connect]
+
+  "飞书（国内版·feishu.cn）":
+    strong: [飞书, feishu]
+
+  "企业微信（WeCom·国内·已支持对话式快连）":
+    strong: [企业微信, 企微, wecom]
+
+  "钉钉（DingTalk·国内·扫码 / 快连约 3–5min）":
+    strong: [钉钉, dingtalk]
+
+  "微信（WeChat·最简单·约 2min）":
+    strong: [微信, wechat]
+    weak: [个人微信]
+
+  "Lark（国际版·larksuite.com）":
+    strong: [lark, larksuite]
+
+  "Telegram（5–8min·最简单·官网推荐首次用户优先选）":
+    strong: [telegram, 电报, tg]
+
+  "WhatsApp（两种接入，按需求二选一）":
+    strong: [whatsapp]
+    weak: [封号, ban]
+
+  "WhatsApp 个人版（非官方 · 扫码 · 约 5min）":
+    strong: [whatsapp个人版, whatsapp personal]
+    weak: [封号, 副号]
+
+  "WhatsApp Business 官方 API（约 5min）":
+    strong: [whatsapp business, whatsapp官方]
+
+  "Microsoft Teams（企业级 · 最重，约 15–20min）":
+    strong: [teams, microsoft teams]
+
+  "Slack（约 3–5min）":
+    strong: [slack]
+
+  "Discord（约 8min）":
+    strong: [discord]
+
+  "LINE（约 5–10min）":
+    strong: [line]
+
+  "Zalo（两种接入）":
+    strong: [zalo]
+
+  "4 订阅和套餐":
+    strong: [订阅, 套餐, subscription]
+    weak: [付费, 购买, buy, pay]
+
+  "Workspace 套餐":
+    strong: [多少钱, 价格, 怎么收费, 收费标准, 有哪些套餐, 标准版, 旗舰版, 企业版, 企业定制, 个人版, 支付方式, 支付宝, how much, price, pricing, plans, standard plan, pro plan, enterprise]
+    weak: [费用, 美元, 月付, 付款, cost, payment]
+
+  "试用期（Trial·高频）":
+    strong: [试用, 免费试用, 绑卡, 信用卡, 试用期, 自动扣费, trial, free trial, credit card]
+    weak: [扣款, 7天, charge]
+
+  "Dashboard 老套餐（旧命名 Air/Pro/Ultra）":
+    strong: [老套餐, 以前的套餐, air, ultra, legacy plan, old plan]
+
+  "升级 / 修改 / 取消":
+    strong: [取消订阅, 退订, 升级套餐, 换套餐, 降级, 差价, cancel subscription, upgrade plan, downgrade, change plan]
+    weak: [取消, 升级, cancel, upgrade]
+
+  "自动续费 / 到期宽限":
+    strong: [自动续费, 续费, 到期, 宽限, 忘记续费, 关闭自动续费, 数据会丢, auto-renewal, renew, expire, grace period]
+    weak: [不想再扣, 过期, expiry]
+
+  "5 Credit（积分）":
+    strong: [积分, 扣积分, 扣费, 积分包, 余额, 充值, 欠费, 自动充值, 一天用多少, 积分清零, 积分重置, credit, credits, top-up, balance, deduct, credit pack, auto top-up]
+    weak: [用完, 消耗, 计费, billing, usage, run out]
+
+  "6 集成 / 应用连接器（Application Connectors）":
+    strong: [连接器, 应用连接, 集成, 自定义连接器, notion, crm, mcp, openapi, swagger, connector, integration, custom connector]
+    weak: [对接系统, 第三方, api, third-party]
+
+  "组织与存储":
+    strong: [组织, 存储上限, 存储空间, organization, storage limit]
+    weak: [存储, 空间, storage]
+
+  "成员席位与 Agent 槽位（高频易混）":
+    strong: [席位, 人头, 槽位, 成员数, 邀请, seat, seats, agent slot, invite]
+    weak: [成员, 同事, 人数, member, colleague, teammate]
+
+  "账户与设置 / 数据迁移":
+    strong: [账户, 账号, 登录, 改邮箱, 数据迁移, 导出数据, 迁移资料, account, login, migrate, export data]
+    weak: [设置, settings]
+
+  "删除 / 注销组织":
+    strong: [删除组织, 注销, 注销组织, 注销账号, delete organization, close organization, delete account]
+    weak: [删除, delete]
+
+  "8 知识库（Knowledge Base）":
+    strong: [知识库, 上传文件, 上传文档, 文档库, knowledge base, upload file, upload document]
+    weak: [资料, 文件, 文档, file, document]
+
+  "9 项目和任务（Projects · Tasks）":
+    strong: [项目, 任务, 多步, 验收, 交代任务, project, task, multi-step]
+    weak: [截止, 预算, deadline, budget]
+
+  "10 安全与合规（尽调最常问）":
+    strong: [安全, 合规, 隐私, 训练模型, 拿去训练, soc2, gdpr, 加密, 私有化, 数据驻留, security, compliance, privacy, encryption, private deployment, data residency, trained on]
+    weak: [数据, 尽调, data, due diligence]
+
+  # ---------- Part 3 · Exception handling ----------
+  "故障排查（现象 → 原因 → 话术）":
+    strong: [不回复, 没反应, 报错, 限流, 上传失败, 离线, 连不上, 很慢, 切换模型, 文件大小, not responding, error, rate limit, offline, upload failed, slow, switch model]
+    weak: [故障, 异常, 失败, problem, failed]
+
+  "转客服 / 升级（以下场景不自行硬答，给官方联系方式）":
+    strong: [退款, 人工客服, 转人工, 联系客服, 联系销售, 合同, 对公, 投诉, refund, human support, contact support, contact sales, contract, complaint]
+    weak: [客服, 销售, support, sales]
+
+  "使用限制 / 暂不支持（对客可答）":
+    strong: [暂不支持, 不支持, 发票, 增值税, 开票, sso, 单点登录, 成本明细, 微信支付, not supported, invoice, vat, single sign-on, cost breakdown]
+    weak: [限制, limitation]
