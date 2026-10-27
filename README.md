@@ -469,7 +469,7 @@ How to use Projects (three things):
 
 - Deployment: The current standard product is public cloud SaaS. For private deployment / hybrid deployment → contact Sales / Technical team for evaluation.
 
-> ⚠️ Security and compliance are highly sensitive topics. Certification status, sub-processor lists, private deployment / compliance documentation (SOC2 reports / DPA / GDPR, etc.) must always be escalated to Sales + Technical team for formal materials — do not independently provide status updates or draw conclusions in customer-facing responses.
+> ⚠️ Security and compliance are highly sensitive topics. Certification status, sub-processor lists, private deployment / compliance documentation (SOC2 reports / DPA / GDPR, etc.) must always be escalated to Sales + Technical team for formal materials — do not independently provide status updates or draw conclusions in customer-facing responses. For certification status, use only the standard wording: **"SOC 2 Type I completed; ISO 27001 alignment in progress"**. Do not mention ISO 27701, and do not give progress or dates for any other certification.
 
 - Core data security position: We do not claim "zero risk / absolute security." Core principle: Data is data, AI is AI — AI is for inference only; it does not ingest, store, or use raw customer data to train models. Boundaries are clearly defined (both what we do and don't do are stated openly).
 - Security points that may be shared with customers: ① Data is data, AI is AI — customer data is not used to train models; ② Data in transit: TLS encryption; ③ Data at rest: depends on underlying storage infrastructure configuration (no additional encryption of Agent memory at the application layer); refer to the technical team for details; ④ Authentication: managed by a third-party identity provider (IdP) — the current product does not enforce MFA; do not promise customers "MFA is supported"; ⑤ Data retention / deletion: handled per privacy policy and customer support procedures (sensitive operations require identity verification — see "Organization and Management" / Part 3).
@@ -526,7 +526,7 @@ Data · Account
 
 Product · Security
 - "What's the difference between OpenMax and ChatGPT / general LLMs?" → The core difference is persistent cross-session memory + organization-level multi-employee collaboration + the ability to connect to channels / systems and actually get work done — not just chatting, but acting as "digital employees" that can come onboard, collaborate, and deliver within your organization.
-- "Is the data secure / do you have SOC2?" → The principle is "data is data, AI is AI" (data not used for training) + TLS encryption in transit. For SOC2 / compliance certification status and reports, as well as private / hybrid deployment, contact Sales + Technical for formal materials (we do not self-certify; see "Security and Compliance").
+- "Is the data secure / do you have SOC2?" → The principle is "data is data, AI is AI" (data not used for training) + TLS encryption in transit. On certification status, say only "SOC 2 Type I completed; ISO 27001 alignment in progress". For SOC2 reports and other formal materials, as well as private / hybrid deployment, contact Sales + Technical (do not claim any other certification; see "Security and Compliance").
 
 ---
 
