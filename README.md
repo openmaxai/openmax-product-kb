@@ -431,7 +431,8 @@ Plans (all include: full core Workspace features · cross-platform IM channels �
 - Account operations:
   - Transfer ownership: A standard product feature — after transfer, the Agent's data and configuration are unaffected (memory is tied to the Agent instance, not the organization owner).
   - Change email / update domain: The specific process and its impact on channel connections and subscriptions should be confirmed with customer support (not hardcoded here from memory).
-  - ⚠️ Sensitive operations (data export / migration / account ownership changes) — always contact customer support for verification before proceeding (→ Part 3 · Escalation to Customer Support).
+  - Transferring the organization's Super Admin: The Super Admin can transfer the Super Admin role to another member of the organization in Organization Settings (the new account must first be invited and have joined). After the transfer, the former Super Admin becomes an Admin; organization data, Agents, credits and subscription are unaffected, and both people keep their own login accounts. If the current Super Admin can no longer log in, contact customer support for verification.
+  - ⚠️ Sensitive operations (data export / migration / ownership changes when the current Super Admin can no longer log in) — always contact customer support for verification before proceeding (→ Part 3 · Escalation to Customer Support).
 
 ### Deleting / Closing an Organization
 - A distinct closure path (different from plan downgrade): Once deletion is initiated — the current subscription is immediately canceled with no refund for the current period; organization Credits are immediately frozen and permanently erased after 14 days (if the organization is restored via customer support within 14 days, Credits are also restored); Auto Top-up is immediately disabled (no unexpected charges during the retention period); if a payment is currently being processed, deletion is blocked (wait for the payment to complete before proceeding).
@@ -567,7 +568,7 @@ Spec Quick Reference (files / message length / response time): Files supported: 
 - Deep due diligence / compliance documentation (DPA, SOC2 reports, private deployment plans) → escalate to Sales + Technical.
 - Deep vertical customization / firm commitments on "can you build feature X" → escalate to pre-sales evaluation.
 - Bot repeatedly anomalous (backend normal but frequent failures) → escalate to engineering.
-- Sensitive operations (data deletion / export / migration / account ownership changes) → escalate to customer support for verification.
+- Sensitive operations (data deletion / export / migration / ownership changes when the current Super Admin cannot log in) → escalate to customer support for verification; if the Super Admin can log in, they transfer it themselves in Organization Settings.
 - Complaints / clearly distressed users → escalate to human support.
 
 > Entry points: email contact@openmax.com (official external contact) / WeChat community / contact the team via the official website / submit a support ticket.
