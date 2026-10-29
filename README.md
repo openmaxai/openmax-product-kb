@@ -42,7 +42,7 @@ Answer principles: Responses vary by user state (paid / trial · team size · pa
 - ⚠️ In Feishu, Bot A cannot @-mention Bot B (platform limitation). For multi-Agent collaboration, use the Workspace instead (Agents can DM each other, hand off tasks, and collaborate across departments — all visible and controllable).
 
 ⑥ Invite Members to the Organization (details → "Organization and Management")
-- Go to Organization Management → send email invitations. Human seats only count members who have already joined — pending invitations do not consume seats (you can send several at once). Agents do not consume human seats (they use a separate slot quota billed independently). Each organization shares one file space (files uploaded in chats and the knowledge base both count); it expands automatically and free of charge as it fills up, up to 500 GB — see "Organization and Storage".
+- Go to Organization Management → send email invitations. Human seats only count members who have already joined — pending invitations do not consume seats (you can send several at once). Agents do not consume human seats (they are currently unlimited in number and billed by actual usage in Credits). Each organization shares one file space (files uploaded in chats and the knowledge base both count); it expands automatically and free of charge as it fills up, up to 500 GB — see "Organization and Storage".
 
 > Completing these 6 steps = finishing the first-run loop. To dive deeper into any area, see the corresponding topic sections below.
 
@@ -90,7 +90,7 @@ Answer principles: Responses vary by user state (paid / trial · team size · pa
 - ② Connect an External Bot (integrate an Agent you already have): Bring in an Agent you have already created outside of Workspace and use it as an employee.
   - Supported external Agent types: Zylos (OpenMax's own product — full automation and collaboration · recommended), Hermes (communications / scheduling / message orchestration), OpenClaw (open-ended task execution), Claude Code (code development and repository collaboration), Codex (engineering tasks and code automation).
   - How to connect: Give it a name → select the Agent type → assign an Owner (the person responsible for this employee, who will manage it going forward) → set permissions (Admins can edit knowledge bases and create projects, in addition to Member permissions — assign as needed) → add a brief description and skill tags → the system generates a dedicated invitation prompt; send it to the Agent to complete the integration.
-  - Seats / billing: Externally connected Agents do not consume human seats or Agent slots (seats count human members only; Agents are unlimited, see Section 7 Organization and Management); no additional charge at this time (they use your own API Key and do not consume platform Credits).
+  - Seats / billing: Externally connected Agents do not consume human seats or Agent slots (seats count human members only; Agents are currently unlimited in number, see Section 7 Organization and Management); no additional charge at this time (they use your own API Key and do not consume platform Credits).
 
 ### 2.3 Cloud Runtime and Storage
 - Employees run in the cloud, ready out of the box: Each AI employee is automatically provisioned with a cloud workspace — no need to set up your own servers. System disk: 30 GB for Lightweight / 60 GB for Standard.
@@ -357,8 +357,8 @@ Two options: Official (Zalo Bot Platform) — stable and supported; Personal (no
 
 ### Workspace Plans
 Plans (all include: full core Workspace features · cross-platform IM channels · team collaboration and project management · Credits shared across all Agents · ability to connect external Agents [free for a limited time] · option to purchase additional Credit packs)
-- Standard (Most Popular) $449/month (list price $499 · limited-time discount): 49,900 Credits per month; trials arranged via Sales; 20 employee seats. Priority support.
-- Pro $899/month (list price $999 · limited-time discount): 99,900 Credits per month; 50 employee seats. Priority support + dedicated customer success manager.
+- Standard (Most Popular) $449/month (list price $499 · limited-time discount): 49,900 Credits per month; trials arranged via Sales; 20 human member seats (Agents are currently unlimited in number and consume Credits based on actual usage). Priority support.
+- Pro $899/month (list price $999 · limited-time discount): 99,900 Credits per month; 50 human member seats (Agents are currently unlimited in number and consume Credits based on actual usage). Priority support + dedicated customer success manager.
 - Enterprise – Custom pricing: Customizable Credit quota; custom seat and permission management for enterprises, multiple deployment options (inquire with Sales), custom integrations, dedicated technical support + SLA. Enterprise-grade security (e.g., SSO/SAML single sign-on) is a roadmap item / negotiable based on enterprise requirements — specific delivery is subject to contract (SSO is not available in the current standard product; see "Usage Limitations"). Priority support + dedicated customer success manager + SLA.
 
 - Custom pricing → escalate to Sales: For arrangements beyond the public plans — deep discounts / contracts / invoices / enterprise procurement / legal — contact Sales for the appropriate pricing.
@@ -421,14 +421,14 @@ Plans (all include: full core Workspace features · cross-platform IM channels �
 ## 7 Organization and Management
 
 ### Organization and Storage
-- The Organization is the unit of billing and resource allocation: Billing, member seats, Agent slots, and Credit pools are all tracked at the Organization level. One paying customer corresponds to one Organization; you can create multiple Organizations, but only one Organization can receive the trial benefit at a time.
+- The Organization is the unit of billing and resource allocation: Billing, human member seats, Agents, and Credit pools are all tracked at the Organization level. One paying customer corresponds to one Organization; you can create multiple Organizations, but only one Organization can receive the trial benefit at a time.
 - Creating an Organization: Available immediately after registration.
 - Storage: Primarily reflected in each Agent's system disk (30 GB for Lightweight / 60 GB for Standard — see "Agent Cloud Runtime and Storage") and the organization's shared file space (shared per organization, expands automatically for free up to 500 GB — see "Knowledge Base"). For storage / capacity issues, contact customer support.
 
 ### Member Seats and Agent Slots (Frequently Confused)
 - What human seats mean: The cap on human members (determined by the plan). Only counts members who have already joined — pending invitations do not consume seats; a seat is only consumed when the invitation is accepted. Multiple pending invitations can exist simultaneously (none consume seats). The system checks the seat cap both when an invitation is sent and when it is accepted — if the org is full, no new invitations can be sent; if not full when sent, each pending invitation is independently checked at acceptance time.
-- Agents do not consume human seats: Agents and human seats are two completely independent quotas — purchased Agents occupy a separate "Agent slot" (a capacity cap, not per-slot billing; actual Agent costs are based on actual conversation/task usage + runtime duration + storage — see "Credit / Credits"). Externally connected Agents (runtime Agents invited in from outside) consume neither human seats nor Agent slots, and are not billed (they use your own API Key and do not consume platform Credits; currently free for a limited time — subject to change in the future).
-- Agent count limit: There is no cap on the number of Agents you can purchase in an Organization, but running them consumes organization Credits — so the practical scale is constrained by your Credit balance.
+- Agents do not consume human seats: Agents and human seats are two completely independent quotas — Agents (both built-in and externally connected) are currently unlimited in number and do not consume human seats; the "Agent slot" is not a fixed count quota and is not billed per Agent — actual Agent costs are Credits consumed by actual conversation/task usage + runtime duration + storage (see "Credit / Credits"). Externally connected Agents (runtime Agents invited in from outside) consume neither human seats nor Agent slots, and are not billed (they use your own API Key and do not consume platform Credits; currently free for a limited time — subject to change in the future).
+- Number of Agents: Agents in an Organization are currently unlimited in number, but running them consumes organization Credits based on actual usage — so the practical scale is constrained by your Credit balance.
 - Multi-user / multi-account collaboration: Workspace supports multi-user collaboration. For multiple roles, purchase multiple Agents and configure each with its own conversation entry points. For more granular "team mode" details, refer to the latest product documentation.
 - Roles and permissions: Organization members have three roles — Super Admin / Admin / Member. Sensitive operations requiring restricted access go through an Approval flow — must be approved by an authorized admin before execution, balancing delegation with control.
 
@@ -517,7 +517,7 @@ Credit (Credits)
 - "How much does a typical day use?" → In Credits: Lightweight ~181 Credits/day, Standard ~377 Credits/day (official copy from the purchase page — runtime baseline; actual usage billed separately). We quote Credits only — specific dollar cost depends on your plan's Credit allocation.
 
 Agents · Seats
-- "Does buying an Agent consume a human seat?" → No. Agents use a separate "Agent slot" quota, independent of human seats. Externally connected Agents consume neither seats nor Credits (free for a limited time — see "Organization and Management").
+- "Does buying an Agent consume a human seat?" → No. Agents are currently unlimited in number and consume Credits based on actual usage, independent of human seats. Externally connected Agents consume neither seats nor Credits (free for a limited time — see "Organization and Management").
 - "What's the difference between Standard and Lightweight / can I upgrade?" → Both have the same capabilities — the only difference is compute capacity (Standard is more powerful and consumes more Credits; choose Standard from the start for core roles). There is no lossless upgrade path — switching tiers requires creating a new Agent and transferring memory.
 - "Can I transfer Agent ownership?" → Yes — it is a standard product feature. After transfer, the Agent's data and configuration are unaffected (memory is tied to the Agent instance, not the organization owner — see "Organization and Management").
 
